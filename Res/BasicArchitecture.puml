@@ -1,0 +1,59 @@
+
+@startuml
+
+interface IOsuSequence {
+
+  float _timeOut  = 2.00f
+  float _sequenceLength  = 2.00f
+  float _spawnRange= 2.00f
+  float _buttonBitmout = 0.5f;
+
+  public IOSuEntity[] OsuEntities {get;}
+
+
+  public event Action<IOsuEntity> OnSpawnEntity;
+
+  public event Action<IOsuEntity> OnEntityPass;
+  public event Action<IOsuEntity> OnEntityFailed;
+
+  public event Action<IOsuSequence> OnSequenceEnd;
+
+  public void ClickButton(IOsuEntity);
+
+  /// Updting all the Entities it's assign to
+  public void Update(float Time);
+
+}
+
+interface IOsuEntity{
+
+  public readonly int Index;
+  public readonly float TimeStamp 
+  public readonly float TimeRange
+
+  public event Action OnTimeOut;
+  /// Return us  value beteen -1 to 1 
+  /// representing perefect time 
+  /// -1 means to early 
+  public event Action<float> OnClick;
+
+  public void Update (float Time)
+  public void Click(float Time)
+
+}
+
+
+abstract class OsuFactory {
+
+  IOsuSequence CreateSequence{}
+  IOsuEntity CreateEntity{}
+
+}
+
+
+
+IOsuSequence ..> IOsuEntity
+
+OsuFactory ..> IOsuSequence
+
+@enduml
