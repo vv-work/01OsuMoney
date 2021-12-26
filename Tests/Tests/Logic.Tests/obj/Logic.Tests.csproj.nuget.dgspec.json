@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "B:\\Git\\100G1Y\\HCTemplate\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj": {}
+    "B:\\Git\\100G1Y\\01OsuMoney\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj": {}
   },
   "projects": {
-    "B:\\Git\\100G1Y\\HCTemplate\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj": {
+    "B:\\Git\\100G1Y\\01OsuMoney\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\Git\\100G1Y\\HCTemplate\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj",
+        "projectUniqueName": "B:\\Git\\100G1Y\\01OsuMoney\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj",
         "projectName": "Logic.Tests",
-        "projectPath": "B:\\Git\\100G1Y\\HCTemplate\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj",
+        "projectPath": "B:\\Git\\100G1Y\\01OsuMoney\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj",
         "packagesPath": "D:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "B:\\Git\\100G1Y\\HCTemplate\\Tests\\Tests\\Logic.Tests\\obj\\",
+        "outputPath": "B:\\Git\\100G1Y\\01OsuMoney\\Tests\\Tests\\Logic.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "B:\\Res\\AppData\\Roaming\\NuGet\\NuGet.Config",

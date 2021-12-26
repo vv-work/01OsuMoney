@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ffOXyRXXea+fYtyUbUSE7Go1uyFgA32OJcAK1lHdrrwj2z2mkQqNgQ6WX1PToAoY8Ijk5YNyprXOh6EtWWz/DQ==",
+  "dgSpecHash": "IwNenkDBWi2QpQHO+ECHJ9klrS4r0TVPH6rI7R6q7KFHocO4U8CVSViQPPhp8Kd8jt4Y7RYw4fG6ByI0EWaekg==",
   "success": true,
-  "projectFilePath": "B:\\Git\\100G1Y\\HCTemplate\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj",
+  "projectFilePath": "B:\\Git\\100G1Y\\01OsuMoney\\Tests\\Tests\\Logic.Tests\\Logic.Tests.csproj",
   "expectedPackageFiles": [
     "D:\\Users\\admin\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "D:\\Users\\admin\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

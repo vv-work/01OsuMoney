@@ -3,27 +3,24 @@ using NUnit.Framework;
 
 namespace Logic.Tests
 {
-    public class Tests
+    public class Tests00OsuEntity
     {
-        private ILogicManager _logicManger;
+        private IOsuEntity _osuEntity;
+        private OsuFactory _osuFactory;
 
         [SetUp]
         public void Setup()
         {
-            _logicManger = new LogicManager();
+            _osuFactory = new OsuFactory();
+            _osuEntity = _osuFactory.CreateEntity();
         }
 
         [Test]
-        public void Test1()
+        public void Test00ClickOnTime()
         {
-            bool init = _logicManger.IsInit;
-            Assert.IsTrue(init);
-        }
-        [Test]
-        public void Test2()
-        {
-            _logicManger.Destroy();
-            Assert.Pass();
+            
+            var entity = _osuFactory.CreateEntity(); 
+            entity.Click(0f);
         }
     }
 }

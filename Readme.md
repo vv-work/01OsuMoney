@@ -5,7 +5,7 @@ The osu game but you use money instead of buttons
 ## Execution 
 
 - [x] Technical Task
-- [ ] Architecture 
+- [x] Architecture 
 - [ ] Tests
 - [ ] Logic
 - [ ] Unity Integration
@@ -60,3 +60,26 @@ float _spawnRange= 2.00f
 ## Architecture
 
 ![Money Rain](Res/BasicArchitecture.png)
+
+## Tests
+
+### Button
+
+- Click button OnTime
+- Don't click button
+- Click in Range
+
+- Click out of Range(Exception)
+
+
+#### Sequence
+
+- Spawning first 3 buttons
+- Spawning button after first is clicked
+
+- Clicking button in right order
+- Clicking button in wrong order
+
+- Complete sequence
+- Not complete sequence
+

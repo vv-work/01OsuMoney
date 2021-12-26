@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C6543B24-2D98-49B2-2A20-C9B3117D2268}</ProjectGuid>
+    <ProjectGuid>{5C2A7209-48FA-27E2-DF68-6EF6A9C1A69B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Logic</AssemblyName>
@@ -54,6 +54,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Logic\LogicManager.cs" />
+    <Compile Include="Assets\Scripts\Logic\IOsuEntity.cs" />
+    <Compile Include="Assets\Scripts\Logic\OsuFactory.cs" />
+    <Compile Include="Assets\Scripts\Logic\AbstractOsuSequence.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Logic\Logic.asmdef" />
