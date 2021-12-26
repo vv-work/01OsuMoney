@@ -6,9 +6,9 @@ The osu game but you use money instead of buttons
 
 ### Money rain
 
-![Money Rain](Res\MoneyRain.gif)
+![Money Rain](Res/MoneyRain.gif)
 
 
 ### Osu Game
 
-![Money Rain](Res\Osu.gif)
+![Money Rain](Res/Osu.gif)
