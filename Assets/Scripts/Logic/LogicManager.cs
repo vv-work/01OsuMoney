@@ -5,19 +5,20 @@ namespace Assets.Scripts.Logic
 {
     public class LogicManager: ILogicManager 
     {
-        public bool IsInit { get; }
+        public bool IsInit { get; private set; }
+
         public LogicManager()
         {
-            throw new System.NotImplementedException();
+            IsInit = true;
         } 
-        public void Init()
+
+        public void Destroy()
         {
-            throw new System.NotImplementedException();
         }
     }
 
     public interface ILogicManager{
         bool IsInit { get; }
-        void Init(); 
+        void Destroy();
     }
 }

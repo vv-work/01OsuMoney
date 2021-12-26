@@ -99,13 +99,6 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
-    "com.xcrew.morpeh": {
-      "version": "https://github.com/X-Crew/Morpeh.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "175e9f44a2d5d5992a879e708b0f155d69abea58"
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
