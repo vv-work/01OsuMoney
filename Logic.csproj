@@ -57,6 +57,8 @@
     <Compile Include="Assets\Scripts\Logic\IOsuEntity.cs" />
     <Compile Include="Assets\Scripts\Logic\OsuFactory.cs" />
     <Compile Include="Assets\Scripts\Logic\AbstractOsuSequence.cs" />
+    <Compile Include="Assets\Scripts\Logic\OsuEntity.cs" />
+    <Compile Include="Assets\Scripts\Logic\Osu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Logic\Logic.asmdef" />

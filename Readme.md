@@ -67,9 +67,12 @@ float _spawnRange= 2.00f
 
 - Click button OnTime
 - Don't click button
-- Click in Range
 
+# Future
+- Double Click
+- Click in Range timeout not invoked
 - Click out of Range(Exception)
+
 
 
 #### Sequence
