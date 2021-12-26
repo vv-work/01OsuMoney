@@ -62,11 +62,12 @@ namespace Assets.Scripts.Logic
                       OnHit(GetTimeout()); 
 
                   } 
-                  throw new Exception("Trying to click clicked button");
+                  //todo :Get back those exceptions
+                  //throw new Exception("Trying to click clicked button");
 
               }
 
-              throw new Exception("Trying to click not active button");
+              //throw new Exception("Trying to click not active button");
 
           }
     }

@@ -2,13 +2,26 @@
 
 The osu game but you use money instead of buttons
 
+## DevLog
+
+### Day 1 
+
+Progress after first day
+
+![Day1](Res/OsuMoney.gif)
+
+> that much I was able to devel in 5 hours.
+Most of the time I spend on making **architecture** **Tests** and **Pure Logic**
+
+But next time I will work fully on visuals and sounds
+
 ## Execution 
 
 - [x] Technical Task
 - [x] Architecture 
-- [ ] Tests
-- [ ] Logic
-- [ ] Unity Integration
+- [x] Tests
+- [x] Logic
+- [x] Unity Integration
 - [ ] Visual 
 - [ ] Sound
 - [ ] Publishing

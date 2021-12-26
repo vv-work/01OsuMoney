@@ -13,6 +13,9 @@ public class OsuSpawner : MonoBehaviour
     [SerializeField]
     private float _circleRadius = 5f;
 
+    [SerializeField]
+    private int _initialCount = 3;
+
 
     private Queue<OsuEntityBehaviour> _osuQueue;
     private OsuEntityBehaviour _liastAdded;
@@ -22,16 +25,17 @@ public class OsuSpawner : MonoBehaviour
     public static OsuFactory Factory;
     void Start()
     {
+        Osu.SetTimeFunc(()=>Time.time);
         Factory = new OsuFactory();
         _osuQueue = new Queue<OsuEntityBehaviour>();
-
-        var steps = 12;
-        DrawCircle(steps);
-
+        for (int i = 0; i < _initialCount; i++)
+            SpawnRandomOsu();
     }
 
-    private void DrawCircle(int steps)
+    //todo : use somewhere
+    private void DrawCircle()
     {
+        var steps = 12;
         for (int i = 0; i < steps; i++)
         {
             var angleStep = (Mathf.PI * 2) / steps;
@@ -39,6 +43,13 @@ public class OsuSpawner : MonoBehaviour
             var osu = CreateOsu(randomOnCircle);
             _osuQueue.Enqueue(osu);
         }
+    }
+
+    private void SpawnRandomOsu()
+    {
+        Vector3 randomOnCircle = RandomOnCircle();
+        var osu = CreateOsu(randomOnCircle);
+        _osuQueue.Enqueue(osu);
     }
 
     private Vector3 RandomOnCircle()
@@ -66,13 +77,15 @@ public class OsuSpawner : MonoBehaviour
 
     public void EntityClicked(IOsuEntity osu)
     {
+        Debug.Log("Entity Clicked");
         var peek = _osuQueue.Peek().Entity;
         if (osu.Index == peek.Index)
         {
             var toBeDestroed = _osuQueue.Dequeue();
-            toBeDestroed.Destroy();
-
+            toBeDestroed.Destroy(); 
+            SpawnRandomOsu();
         }
+
     }
 
 }
